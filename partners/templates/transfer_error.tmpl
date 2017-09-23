@@ -1,0 +1,26 @@
+From: support@bitinstant.com
+
+To: {{ order['NotifyEmail'] }}
+
+Subject: BitInstant Transaction Failed
+
+Hi {{user.FirstName}}
+
+Thank you for using BitInstant!
+
+This email is to notify you that while received your payment successfully, we have encountered an error while trying to process your transaction at {{ eventat }}, meaning your order has currently failed.
+
+
+Transaction ID: {{ order['OrderID'] }}
+
+If you contact support about this transaction, please reference this number so we can help you more quickly.
+
+Your payment of {{ order['AmountToCredit'] }}, has NOT yet been transferred to  {{ order['DestExchange'] }}.
+
+Our customer support agents have been informed of this problem and are currently investigating the problem. An agent will be in touch with you shortly regarding your account and what the next steps are. Until we understand what the issue with your transaction is, we suggest that you avoid creating further orders at BitInstant.com (in case you have entered account numbers incorrectly).
+
+Again, we have automatically created a support ticket about this issue and you do not need to create one manually. We will contact you shortly to help resolve your issue.
+
+Thank you for your patience,
+
+The Bitinstant Team

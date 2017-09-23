@@ -1,0 +1,25 @@
+From: support@bitinstant.com
+
+To: {{ order['NotifyEmail'] }}
+
+Subject: BitInstant Payment Error
+
+Hi {{ user.FirstName }}
+
+Thank you for using BitInstant!
+
+Unfortunately, we have encountered a problem. This email is to notify you that there was an error with your payment at {{ eventat }}
+
+Transaction ID: {{ order['OrderID'] }}
+
+If you contact support about this transaction, please reference this number so we can help you more quickly.
+
+Your requested payment of {{ order['AmountDue'] }} from {{ order['PayMethod'] }}, was NOT received by BitInstant. Because we did not receive payment we are unable to process this transaction.
+
+Please try again, making sure that you have correctly entered all your account information, or contact our support team for further assistance:
+Our Customer Support Center is useful to finding answers to common questions: http://support.bitinstant.com. If you don�t find what you need there, please use the contact us form: http://support.bitinstant.com/customer/portal/emails/new to get help from real live people right here in the US!
+For updates please follow us @bitinstanthelp on Twitter.
+
+We apologize for any inconvenience,
+
+The Bitinstant Team
